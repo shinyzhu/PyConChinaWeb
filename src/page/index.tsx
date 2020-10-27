@@ -15,12 +15,7 @@ import { ShowRoom } from './Activity/ShowRoom';
 import { PartnerDetail } from './Activity/PartnerDetail';
 import { AgendaDetail } from './Activity/AgendaDetail';
 
-const menu = [
-    {
-        title: 'PyCon China 2020',
-        href: 'https://github.com/shinyzhu/PyConChinaWeb'
-    }
-];
+const menu = [];
 
 export const PageFrame = observer(() => (
     <div>
@@ -33,7 +28,7 @@ export const PageFrame = observer(() => (
                         src="https://raw.githubusercontent.com/PyConChina/PyConChina-Design/master/logo/main-logo.png"
                         style={{ width: '2rem', marginRight: '0.5rem' }}
                     />
-                    开源社
+                    PyConChina 2020
                 </>
             }
         >
@@ -79,7 +74,9 @@ export const PageFrame = observer(() => (
                 href="https://web-cell.dev/BootCell/"
             >
                 BootCell v1
-            </a> and hosted on <a href="https://azure.com">Microsoft Azure</a> by <a href="http://aka.ms/pyconswa">Static Web Apps</a>.
+            </a>{' '}
+            and hosted on <a href="https://azure.com">Microsoft Azure</a> by{' '}
+            <a href="http://aka.ms/pyconswa">Static Web Apps</a>.
         </footer>
     </div>
 ));
