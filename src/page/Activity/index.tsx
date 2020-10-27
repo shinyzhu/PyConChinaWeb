@@ -242,7 +242,7 @@ export class AgendaPage extends mixin<{ aid: number }, AgendaPageState>() {
 
         return (
             <SpinnerBox cover={loading}>
-                {banner && <Image background src={banner.url} />}
+                {banner && <Image background src="https://raw.githubusercontent.com/shinyzhu/PyConChinaWeb/master/src/image/PyConChina2020_banner.jpg" />}
 
                 <main className="container">
                     <h2 className="mt-5 text-center">大会议程</h2>
