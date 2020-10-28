@@ -226,9 +226,7 @@ export class AgendaPage extends mixin<{ aid: number }, AgendaPageState>() {
         const programsOfToday = currentAgenda.filter(({ start_time }) =>
             start_time.startsWith(date)
         );
-        const programs = !category
-            ? programsOfToday
-            : programsOfToday.filter(({ category: { id } }) => category === id);
+        const programs = [];
 
         const applyButton = (
             <Button
@@ -242,43 +240,29 @@ export class AgendaPage extends mixin<{ aid: number }, AgendaPageState>() {
 
         return (
             <SpinnerBox cover={loading}>
-                {banner && <Image background src="https://raw.githubusercontent.com/shinyzhu/PyConChinaWeb/master/src/image/PyConChina2020_banner.jpg" />}
+                {banner && (
+                    <Image
+                        background
+                        src="https://raw.githubusercontent.com/shinyzhu/PyConChinaWeb/master/src/image/PyConChina2020_banner.jpg"
+                    />
+                )}
 
                 <main className="container">
-                    <h2 className="mt-5 text-center">大会议程</h2>
+                    <h2 className="mt-5 text-center" id="conf-agenda">
+                        大会议程
+                    </h2>
                     <section>
-                        {this.renderFilter(programsOfToday)}
                         <div className="row">
                             {programs[0] ? (
                                 programs.map(this.renderAgenda)
                             ) : (
-                                <p className="m-auto">没有议程</p>
+                                <p className="m-auto">敬请期待 🐍</p>
                             )}
                         </div>
                     </section>
-
-                    <h2 className="mt-5 text-center">开源市集</h2>
-                    <p className="mt-4 text-center text-muted">
-                        本届大会的开源市集设置于<strong>成都分会场</strong>
-                        <br />
-                        {session.user ? (
-                            applyButton
-                        ) : (
-                            <TooltipBox text="请先登录">
-                                {applyButton}
-                            </TooltipBox>
-                        )}
-                    </p>
-                    <section className="card-columns">
-                        {currentExhibitions.map(this.renderExhibition)}
-                    </section>
                 </main>
 
-                <footer className="my-5 text-center">
-                    <Button size="lg" href={'activity/showroom?aid=' + id}>
-                        合作伙伴
-                    </Button>
-                </footer>
+                <footer className="my-5 text-center"></footer>
             </SpinnerBox>
         );
     }

@@ -15,7 +15,16 @@ import { ShowRoom } from './Activity/ShowRoom';
 import { PartnerDetail } from './Activity/PartnerDetail';
 import { AgendaDetail } from './Activity/AgendaDetail';
 
-const menu = [];
+const menu = [
+    {
+        title: '大会议程',
+        href: '#conf-agenda'
+    },
+    {
+        title: '立即投稿',
+        href: '#'
+    }
+];
 
 export const PageFrame = observer(() => (
     <div>
@@ -35,16 +44,6 @@ export const PageFrame = observer(() => (
             {menu.map(({ title, ...props }) => (
                 <NavLink {...props}>{title}</NavLink>
             ))}
-            {!session.user ? (
-                <Button href={service.baseURI + 'connect/github/'}>登录</Button>
-            ) : (
-                <DropMenu caption={session.user.username}>
-                    <DropMenuItem href="profile">基本信息</DropMenuItem>
-                    <DropMenuItem onClick={() => session.signOut()}>
-                        退出
-                    </DropMenuItem>
-                </DropMenu>
-            )}
         </NavBar>
 
         <CellRouter
