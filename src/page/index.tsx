@@ -17,12 +17,16 @@ import { AgendaDetail } from './Activity/AgendaDetail';
 
 const menu = [
     {
-        title: '大会议程',
+        title: '大会议程 Agenda',
         href: '#conf-agenda'
     },
     {
-        title: '立即投稿',
-        href: '#'
+        title: '立即投稿 CFP',
+        href: 'https://jinshuju.net/f/zWuGxB'
+    },
+    {
+        title: '报名志愿者 Volunteer',
+        href: 'https://jinshuju.net/f/t58Hb6'
     }
 ];
 
