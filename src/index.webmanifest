@@ -1,8 +1,8 @@
 {
-  "name": "开源社官网",
-  "short_name": "开源社",
+  "name": "PyConChina",
+  "short_name": "PyConChina",
   "start_url": ".",
-  "description": "PWA of KaiYuanShe",
+  "description": "PyConChina Web - Conference agenda, speakers, info",
   "scope": "/",
   "display": "standalone",
   "orientation": "any",
@@ -12,7 +12,7 @@
   "background_color": "transparent",
   "icons": [
     {
-      "src": "https://kaiyuanshe.cn/image/KaiYuanShe-logo.png",
+      "src": "https://sres.blob.core.windows.net/img/main_logo_f718f64140.png",
       "type": "image/png",
       "sizes": "337x337"
     }
