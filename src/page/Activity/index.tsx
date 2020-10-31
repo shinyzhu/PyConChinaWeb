@@ -245,7 +245,7 @@ export class AgendaPage extends mixin<{ aid: number }, AgendaPageState>() {
                 {banner && (
                     <Image
                         background
-                        src="https://raw.githubusercontent.com/shinyzhu/PyConChinaWeb/master/src/image/PyConChina2020_banner.jpg"
+                        src="https://sres.blob.core.windows.net/img/PyConChina2020_banner.jpg"
                     />
                 )}
 
