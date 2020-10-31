@@ -13,7 +13,7 @@ export const service = new HTTPClient({
     baseURI:
         location.hostname === 'localhost'
             ? 'http://localhost:1337/'
-            : 'https://pyconsvc.onazure.dev/',
+            : 'https://pycon.onazure.dev/',
     responseType: 'json'
 }).use(({ request }, next) => {
     if (token)
