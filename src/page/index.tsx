@@ -37,8 +37,8 @@ export const PageFrame = observer(() => (
             brand={
                 <>
                     <img
-                        alt="WebCell scaffold"
-                        src="https://raw.githubusercontent.com/PyConChina/PyConChina-Design/master/logo/main-logo.png"
+                        alt="PyConChina 2020"
+                        src="https://sres.blob.core.windows.net/img/main_logo_f718f64140.png"
                         style={{ width: '2rem', marginRight: '0.5rem' }}
                     />
                     PyConChina 2020
@@ -48,6 +48,16 @@ export const PageFrame = observer(() => (
             {menu.map(({ title, ...props }) => (
                 <NavLink {...props}>{title}</NavLink>
             ))}
+            {!session.user ? (
+                <Button href={service.baseURI + 'connect/github/'}>登录</Button>
+            ) : (
+                <DropMenu caption={session.user.username}>
+                    <DropMenuItem href="profile">基本信息</DropMenuItem>
+                    <DropMenuItem onClick={() => session.signOut()}>
+                        退出
+                    </DropMenuItem>
+                </DropMenu>
+            )}
         </NavBar>
 
         <CellRouter
@@ -78,8 +88,8 @@ export const PageFrame = observer(() => (
             >
                 BootCell v1
             </a>{' '}
-            and hosted on <a href="https://azure.com">Microsoft Azure</a> by{' '}
-            <a href="http://aka.ms/pyconswa">Static Web Apps</a>.
+            and hosted on <a href="https://azure.microsoft.com/?WT.mc_id=python-10572-xinglzhu">Microsoft Azure</a> by{' '}
+            <a href="https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=python-10572-xinglzhu">Static Web Apps</a>.
         </footer>
     </div>
 ));
