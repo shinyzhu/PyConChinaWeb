@@ -2,14 +2,13 @@
 
 # PyConChina 2020
 
-[PyConChina][1] 大会网站，提供大会日程、讲师信息等内容。一个 [渐进式 Web 应用][2]。
+[PyConChina][1] 大会网站，提供大会日程、讲师信息等内容。一个[渐进式 Web 应用][2]。
 
-[![NPM Dependency](https://david-dm.org/kaiyuanshe/PWA.svg)][3]
-[![CI & CD](https://github.com/kaiyuanshe/PWA/workflows/CI%20&%20CD/badge.svg)][4]
+[![NPM Dependency](https://david-dm.org/shinyzhu/PyConChinaWeb.svg)][3]
+[![CI & CD](https://github.com/shinyzhu/PyConChinaWeb/workflows/CI%20&%20CD/badge.svg)][4]
 
 ## 重要链接
 
--   开发看板：https://github.com/shinyzhu/PyConChinaWeb/projects/1?fullscreen=true
 -   后端 API：https://github.com/shinyzhu/PyConChinaService
 
 ## Technology stack
@@ -19,7 +18,7 @@
 -   Component suite: [BootStrap v4][7]
 -   PWA framework: [Workbox v4][8]
 -   Package bundler: [Parcel v1][9]
--   CI / CD: GitHub [Actions][10] + [Pages][11]
+-   CI / CD: GitHub [Actions][10] + [Azure Static Web Apps][11]
 
 ## Development
 
@@ -45,4 +44,4 @@ npm run build
 [8]: https://developers.google.com/web/tools/workbox
 [9]: https://parceljs.org/
 [10]: https://github.com/features/actions
-[11]: https://pages.github.com/
+[11]: https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=python-10572-xinglzhu
