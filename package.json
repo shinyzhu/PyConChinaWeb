@@ -1,7 +1,7 @@
 {
-    "name": "@kaiyuanshe/pwa",
-    "version": "0.8.0",
-    "description": "PWA of KaiYuanShe",
+    "name": "@pyconchina/web",
+    "version": "0.1.0",
+    "description": "PyConChina Web",
     "keywords": [
         "web-component",
         "typescript",
@@ -10,10 +10,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/kaiyuanshe/PWA.git"
+        "url": "git+https://github.com/shinyzhu/PyConChinaWeb.git"
     },
     "bugs": {
-        "url": "https://github.com/kaiyuanshe/PWA/issues"
+        "url": "https://github.com/shinyzhu/PyConChinaWeb/issues"
     },
     "main": "src/index.html",
     "dependencies": {
