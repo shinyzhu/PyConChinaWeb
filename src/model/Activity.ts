@@ -73,6 +73,9 @@ export class ActivityModel extends CollectionModel<Activity> {
 
         const { description, ...data } = activity;
 
-        return (this.current = { description: marked(description), ...data });
+        return (this.current = {
+            description: marked(description || ''),
+            ...data
+        });
     }
 }
