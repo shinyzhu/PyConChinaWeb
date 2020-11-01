@@ -17,10 +17,6 @@ import { AgendaDetail } from './Activity/AgendaDetail';
 
 const menu = [
     {
-        title: '大会议程 Agenda',
-        href: '#conf-agenda'
-    },
-    {
         title: '立即投稿 CFP',
         href: 'https://jinshuju.net/f/zWuGxB'
     },
@@ -88,8 +84,15 @@ export const PageFrame = observer(() => (
             >
                 BootCell v1
             </a>{' '}
-            and hosted on <a href="https://azure.microsoft.com/?WT.mc_id=python-10572-xinglzhu">Microsoft Azure</a> by{' '}
-            <a href="https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=python-10572-xinglzhu">Static Web Apps</a>.
+            and hosted on{' '}
+            <a href="https://azure.microsoft.com/?WT.mc_id=python-10572-xinglzhu">
+                Microsoft Azure
+            </a>{' '}
+            by{' '}
+            <a href="https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=python-10572-xinglzhu">
+                Static Web Apps
+            </a>
+            .
         </footer>
     </div>
 ));

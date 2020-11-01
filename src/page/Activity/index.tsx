@@ -242,18 +242,15 @@ export class AgendaPage extends mixin<{ aid: number }, AgendaPageState>() {
 
         return (
             <SpinnerBox cover={loading}>
-                {banner && (
-                    <Image
-                        background
-                        src="https://sres.blob.core.windows.net/img/PyConChina2020_banner.jpg"
-                    />
-                )}
+                {banner && <Image background src={banner.url} />}
 
                 <main className="container">
                     <h2 className="mt-5 text-center" id="conf-agenda">
                         大会议程
                     </h2>
                     <section>
+                        {this.renderFilter(programsOfToday)}
+
                         <div className="row">
                             {programs[0] ? (
                                 programs.map(this.renderAgenda)
