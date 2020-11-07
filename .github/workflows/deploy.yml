@@ -1,0 +1,31 @@
+name: Deploy it NOW
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  deploying:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check em out
+      - uses: actions/checkout@v2
+
+      - name: Deploy em
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd ~/web
+            git fetch -all
+            git reset --hard
+            git pull
+            rm -rf ~/web/dist/*
+            npm install
+            npm run build
+            
+
