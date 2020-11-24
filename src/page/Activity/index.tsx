@@ -261,7 +261,11 @@ export class AgendaPage extends mixin<{ aid: string }, AgendaPageState>() {
                     </section>
                 </main>
 
-                <footer className="my-5 text-center"></footer>
+                <footer className="my-5 text-center">
+                    <Button size="lg" href={'activity/showroom?aid=' + id}>
+                        合作伙伴
+                    </Button>
+                </footer>
             </SpinnerBox>
         );
     }

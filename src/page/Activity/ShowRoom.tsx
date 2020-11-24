@@ -70,25 +70,6 @@ export class ShowRoom extends mixin() {
                 <div className="container overflow-auto text-white">
                     <h1 className="mt-5 text-center">{name}</h1>
                     <p className="h4 my-4 text-center">{slogan}</p>
-                    <Embed
-                        is="iframe"
-                        className={style['main-video']}
-                        src="//player.bilibili.com/player.html?aid=838735500&amp;bvid=BV1Sg4y1v7EX&amp;cid=207306433&amp;page=1"
-                        framespacing="0"
-                        allowfullscreen="true"
-                    />
-                    <div className={style.buttonsTray}>
-                        <ButtonGroup>
-                            {buttons.map(text => (
-                                <Button
-                                    className={style.buttons}
-                                    color="secondary"
-                                >
-                                    {text}
-                                </Button>
-                            ))}
-                        </ButtonGroup>
-                    </div>
 
                     <section className="row mt-5">
                         {partner_ships?.map(this.renderPartner)}
