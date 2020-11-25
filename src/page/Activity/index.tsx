@@ -141,12 +141,12 @@ export class AgendaPage extends mixin<{ aid: string }, AgendaPageState>() {
         place
     }: Program) => (
         <div
-            className="col-12 col-sm-6 col-md-4 mb-4"
+            className="col-12 col-sm-6 col-md-4 mb-4 d-flex"
             id={'program-' + id}
             key={'program-' + id}
         >
             <Card
-                className="h-100"
+                className={`${style.fixh100}`}
                 title={<a href={'activity/agenda?pid=' + id}>{title}</a>}
                 header={
                     <div className="d-flex justify-content-around">
