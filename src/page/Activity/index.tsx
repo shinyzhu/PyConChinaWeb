@@ -228,7 +228,7 @@ export class AgendaPage extends mixin<{ aid: string }, AgendaPageState>() {
         );
         const programs = !category
             ? programsOfToday
-            : programsOfToday.filter(({ category: { id } }) => category === id);
+            : programsOfToday.filter(({ category: { id } }) => category == id);
 
         const applyButton = (
             <Button
