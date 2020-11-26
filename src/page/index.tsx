@@ -18,12 +18,20 @@ import { AgendaDetail } from './Activity/AgendaDetail';
 
 const menu = [
     {
-        title: '立即投稿 CFP',
-        href: 'https://jinshuju.net/f/zWuGxB'
+        title: '首页',
+        href: '/'
     },
     {
-        title: '报名志愿者 Volunteer',
-        href: 'https://jinshuju.net/f/t58Hb6'
+        title: '合作伙伴',
+        href: 'activity/showroom?aid=1'
+    },
+    {
+        title: 'Python开发者调研',
+        href: 'https://www.wjx.cn/m/43310160.aspx'
+    },
+    {
+        title: '立即购票',
+        href: 'https://www.bagevent.com/event/6975077#website_moduleId_864150'
     }
 ];
 
@@ -45,6 +53,16 @@ export const PageFrame = observer(() => (
             {menu.map(({ title, ...props }) => (
                 <NavLink {...props}>{title}</NavLink>
             ))}
+
+            <Button
+                style={{ margin: 'auto 1em auto auto' }}
+                href={
+                    'https://www.bagevent.com/event/6975077#website_moduleId_864150'
+                }
+            >
+                立即购票（线上免费）
+            </Button>
+
             {!session.user ? (
                 <Button href={service.baseURI + 'connect/github/'}>登录</Button>
             ) : (

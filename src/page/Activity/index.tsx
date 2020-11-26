@@ -246,7 +246,7 @@ export class AgendaPage extends mixin<{ aid: string }, AgendaPageState>() {
                 {banner && <Image background src={banner.url} />}
 
                 <main className="container">
-                    <h2 className="mt-5 text-center" id="conf-agenda">
+                    <h2 className="mt-5 text-center" id="confagenda">
                         大会议程
                     </h2>
                     <section>
