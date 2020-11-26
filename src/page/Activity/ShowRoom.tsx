@@ -35,7 +35,7 @@ export class ShowRoom extends mixin() {
         level
     }: Partnership) {
         return (
-            <div className="col-12 col-sm-6 col-md-3 my-4">
+            <div className="col-12 col-sm-6 col-md-3 my-4 d-flex">
                 <a
                     className={classNames(
                         style.frame,
