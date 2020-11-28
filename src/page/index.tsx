@@ -56,11 +56,9 @@ export const PageFrame = observer(() => (
 
             <Button
                 style={{ margin: 'auto 1em auto auto' }}
-                href={
-                    'https://www.bagevent.com/event/6975077#website_moduleId_864150'
-                }
+                href={'https://www.wjx.cn/m/98956349.aspx'}
             >
-                立即购票（线上免费）
+                参会调查
             </Button>
 
             {!session.user ? (

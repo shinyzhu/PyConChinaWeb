@@ -246,6 +246,26 @@ export class AgendaPage extends mixin<{ aid: string }, AgendaPageState>() {
                 {banner && <Image background src={banner.url} />}
 
                 <main className="container">
+                    <h2 className="mt-5 text-center" id="liveinfo">
+                        直播地址
+                    </h2>
+                    <div className="row">
+                        <div className="col">
+                            <p class="text-center">
+                                <a href="https://segmentfault.com/area/pyconchina-2020">
+                                    <img src="https://sres.blob.core.windows.net/img/sf_b37d113ab6.png" />
+                                </a>
+                            </p>
+                        </div>
+                        <div className="col">
+                            <p className="text-center">
+                                <a href="https://marketing.csdn.net/p/eb7abbc123a8fb3554b61d55f8626dd1">
+                                    <img src="https://sres.blob.core.windows.net/img/csdn_3718e9968c.png" />
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
                     <h2 className="mt-5 text-center" id="confagenda">
                         大会议程
                     </h2>
